@@ -1,0 +1,15 @@
+package com.ravan.ravan;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class RavanController {
+
+    @GetMapping("/")
+    public String home(Model model) {
+        model.addAttribute("message", "Hello Thymeleaf");
+        return "index"; // index.html ko call karega
+    }
+}

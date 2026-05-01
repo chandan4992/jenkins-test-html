@@ -10,6 +10,6 @@ public class RavanController {
     @GetMapping("/")
     public String home(Model model) {
         model.addAttribute("message", "Hello Thymeleaf");
-        return "index"; // index.html ko call karega
+        return "index";
     }
 }
